@@ -27,4 +27,9 @@ public class Response<T> {
     public void setPayload(T payload) {
         this.payload = payload;
     }
+    
+    @Override
+    public String toString() {
+        return "Response [messages=" + messages + ", payload=" + payload + ", status=" + status + "]";
+    }
 }
